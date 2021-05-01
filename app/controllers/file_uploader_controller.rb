@@ -32,7 +32,7 @@ class FileUploaderController < ApplicationController
                 file.write(uploaded_io.read)
                 respond_to do |format|
                     begin
-                        speech_engine_url = 'http://172.17.0.4:9999/api/file_path/' + @filename.to_s
+                        speech_engine_url = 'http://172.17.0.2:9999/api/file_path/' + @filename.to_s
                         @res_json = SpeechEngine.new.send_to_engine(speech_engine_url)
                         @words = []
                         @segments_starts = []
