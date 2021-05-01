@@ -1,0 +1,198 @@
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-12-20 17:13:32 +0000
+Processing by FileUploaderController#index as HTML
+  Rendering file_uploader/index.html.erb within layouts/application
+  Rendered file_uploader/index.html.erb within layouts/application (Duration: 1611.7ms | Allocations: 15135)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 28b34e99392fabb29ef1
+Version: webpack 4.44.2
+Time: 8730ms
+Built at: 12/20/2020 5:13:52 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-31c0a7fd2aa09b742314.js   124 KiB  application  [emitted] [immutable]  application
+js/application-31c0a7fd2aa09b742314.js.map   139 KiB  application  [emitted] [dev]        application
+      js/bootstrap-8f404288d08329f276a6.js   117 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-8f404288d08329f276a6.js.map   102 KiB    bootstrap  [emitted] [dev]        bootstrap
+     js/downloader-2e09b0caf03364aed92d.js  6.91 KiB   downloader  [emitted] [immutable]  downloader
+ js/downloader-2e09b0caf03364aed92d.js.map  7.54 KiB   downloader  [emitted] [dev]        downloader
+    js/highlighter-ed4afb047016cefcd10b.js  4.82 KiB  highlighter  [emitted] [immutable]  highlighter
+js/highlighter-ed4afb047016cefcd10b.js.map   4.7 KiB  highlighter  [emitted] [dev]        highlighter
+         js/jquery-2a884484c7e50b696102.js   137 KiB       jquery  [emitted] [immutable]  jquery
+     js/jquery-2a884484c7e50b696102.js.map   113 KiB       jquery  [emitted] [dev]        jquery
+                             manifest.json  1.72 KiB               [emitted]              
+Entrypoint application = js/application-31c0a7fd2aa09b742314.js js/application-31c0a7fd2aa09b742314.js.map
+Entrypoint bootstrap = js/bootstrap-8f404288d08329f276a6.js js/bootstrap-8f404288d08329f276a6.js.map
+Entrypoint downloader = js/downloader-2e09b0caf03364aed92d.js js/downloader-2e09b0caf03364aed92d.js.map
+Entrypoint highlighter = js/highlighter-ed4afb047016cefcd10b.js js/highlighter-ed4afb047016cefcd10b.js.map
+Entrypoint jquery = js/jquery-2a884484c7e50b696102.js js/jquery-2a884484c7e50b696102.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./app/javascript/packs/bootstrap.bundle.min.js] 111 KiB {bootstrap} [built]
+[./app/javascript/packs/downloader.js] 3.01 KiB {downloader} [built]
+[./app/javascript/packs/highlighter.js] 936 bytes {highlighter} [built]
+[./app/javascript/packs/jquery.min.js] 133 KiB {jquery} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {bootstrap} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/bootstrap.bundle.min.js
+Module not found: Error: Can't resolve 'jquery' in '/app/app/javascript/packs'
+ @ ./app/javascript/packs/bootstrap.bundle.min.js 7:74-91
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20200ms (Views: 20189.4ms | ActiveRecord: 0.0ms | Allocations: 21775)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (12.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-12-20 17:16:55 +0000
+Processing by FileUploaderController#index as HTML
+  Rendering file_uploader/index.html.erb within layouts/application
+  Rendered file_uploader/index.html.erb within layouts/application (Duration: 3076.2ms | Allocations: 15498)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3528ms (Views: 3518.2ms | ActiveRecord: 0.0ms | Allocations: 22163)
+  [1m[35m (4.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-12-20 17:18:38 +0000
+Processing by FileUploaderController#index as HTML
+  Rendering file_uploader/index.html.erb within layouts/application
+  Rendered file_uploader/index.html.erb within layouts/application (Duration: 1540.5ms | Allocations: 12229)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2367ms (Views: 2355.3ms | ActiveRecord: 0.0ms | Allocations: 18471)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-12-20 17:21:23 +0000
+Processing by FileUploaderController#index as HTML
+  Rendering file_uploader/index.html.erb within layouts/application
+  Rendered file_uploader/index.html.erb within layouts/application (Duration: 1363.6ms | Allocations: 12261)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1712ms (Views: 1701.0ms | ActiveRecord: 0.0ms | Allocations: 18503)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/upload" for 127.0.0.1 at 2020-12-20 17:21:25 +0000
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-12-20 17:21:48 +0000
+Processing by FileUploaderController#index as HTML
+  Rendering file_uploader/index.html.erb within layouts/application
+  Rendered file_uploader/index.html.erb within layouts/application (Duration: 1513.6ms | Allocations: 12316)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1862ms (Views: 1849.6ms | ActiveRecord: 0.0ms | Allocations: 18558)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/upload" for 127.0.0.1 at 2020-12-20 17:21:50 +0000
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-12-20 17:22:10 +0000
+Processing by FileUploaderController#index as HTML
+  Rendering file_uploader/index.html.erb within layouts/application
+  Rendered file_uploader/index.html.erb within layouts/application (Duration: 1503.6ms | Allocations: 12371)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1840ms (Views: 1827.0ms | ActiveRecord: 0.0ms | Allocations: 18613)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/upload" for 127.0.0.1 at 2020-12-20 17:22:12 +0000
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-12-20 17:22:44 +0000
+Processing by FileUploaderController#index as HTML
+  Rendering file_uploader/index.html.erb within layouts/application
+  Rendered file_uploader/index.html.erb within layouts/application (Duration: 1339.7ms | Allocations: 12416)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1637ms (Views: 1624.1ms | ActiveRecord: 0.0ms | Allocations: 18658)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/upload" for 127.0.0.1 at 2020-12-20 17:22:45 +0000
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-12-20 17:23:11 +0000
+Processing by FileUploaderController#index as HTML
+  Rendering file_uploader/index.html.erb within layouts/application
+  Rendered file_uploader/index.html.erb within layouts/application (Duration: 1989.2ms | Allocations: 12466)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2942ms (Views: 2928.9ms | ActiveRecord: 0.0ms | Allocations: 18708)
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/upload" for 127.0.0.1 at 2020-12-20 17:23:14 +0000
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-12-20 17:25:41 +0000
+Processing by FileUploaderController#index as HTML
+  Rendering file_uploader/index.html.erb within layouts/application
+  Rendered file_uploader/index.html.erb within layouts/application (Duration: 1689.2ms | Allocations: 12516)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2076ms (Views: 2063.6ms | ActiveRecord: 0.0ms | Allocations: 18758)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/upload" for 127.0.0.1 at 2020-12-20 17:25:44 +0000
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-12-20 17:32:07 +0000
+Processing by FileUploaderController#index as HTML
+  Rendering file_uploader/index.html.erb within layouts/application
+  Rendered file_uploader/index.html.erb within layouts/application (Duration: 1568.6ms | Allocations: 12566)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1880ms (Views: 1868.2ms | ActiveRecord: 0.0ms | Allocations: 18808)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/upload" for 127.0.0.1 at 2020-12-20 17:32:09 +0000
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-12-21 18:00:19 +0000
+Processing by FileUploaderController#index as HTML
+  Rendering file_uploader/index.html.erb within layouts/application
+  Rendered file_uploader/index.html.erb within layouts/application (Duration: 1388.6ms | Allocations: 12616)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1673ms (Views: 1663.9ms | ActiveRecord: 0.0ms | Allocations: 18858)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/upload" for 127.0.0.1 at 2020-12-21 18:00:21 +0000
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m

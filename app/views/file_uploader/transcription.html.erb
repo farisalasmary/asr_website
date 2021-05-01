@@ -1,0 +1,60 @@
+<% content_for :css_n_js_includes_top do %>
+  <!-- My Javascripts -->
+  <script>
+    // IMPORTANT NOTE: this piece of code MUST be before included BEFORE the highlighter.js below
+    // These variables are global and can be accessed from different JS files
+    filename = "<%= @filename %>";
+    segments_starts = [<%= @segments_starts.join(",") %>];
+    segments_ends = [<%= @segments_ends.join(",") %>];
+    words = 
+        [
+            <% @words.each_with_index do |word, index| %>
+                <% if index != (@words.length() - 1)%>    
+                    '<%= word %>',
+                <% else %>
+                    '<%= word %>'
+                <% end %>
+            <% end %>
+        ]
+    
+    is_editable = 'false';
+    function setCurTime(index) { 
+      audio_controller.currentTime = segments_starts[index];
+    } 
+  </script>
+<%= javascript_pack_tag "highlighter" %>
+<%= javascript_pack_tag "downloader" %>
+<% end %>
+
+
+<h1 class="my-4">Transcription Page</h1>
+<div class="card mb-4">
+   <!--
+      <video id='video_controller' style="background-color: black !important;" controls>
+         <source src="https://steven106657886002857.googuu.xyz/api/get.php?id=8cd4d6b0d7ea56da2b02a776141" type="video/mp4">
+         Your browser does not support HTML video.
+      </video>
+      -->
+    <% if @video_file.present? %>
+        <video id='audio_controller' style="background-color: black !important;" controls>
+            <source src="/download/<%= @video_file %>" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    <% else %>
+        <audio id='audio_controller' controls preload="auto">
+        <source src="/download/<%= @audio_file %>" type="audio/wav">
+        Your browser does not support the <code>audio</code> element. 
+        </audio>
+    <% end %>
+   <div class="card-body">
+      <h3 class="card-title"><%= @filename %></h3>
+      <button class="btn btn-secondary" id="download_txt_btn">Save as TXT</button>
+      <button class="btn btn-secondary" id="download_srt_btn">Save as SRT</button>
+      <button class="btn btn-secondary" id="edit_txt_btn">Edit Text</button>
+      <p id='transcription_text'>
+         <% @words.each_with_index do |word, index| %>
+         <span onclick="setCurTime(<%= index %>);" id="word_<%= index %>"><%= word %></span>
+         <% end %>
+      </p>
+   </div>
+</div>

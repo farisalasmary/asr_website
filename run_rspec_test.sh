@@ -1,0 +1,2 @@
+bundle exec rspec ruby_api/speech_engine_wrapper_spec.rb
+bundle exec rspec spec/requests/file_uploader_controller_request_spec.rb

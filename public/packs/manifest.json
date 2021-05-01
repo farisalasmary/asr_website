@@ -1,0 +1,54 @@
+{
+  "application.js": "/packs/js/application-9afcbb5693aa87623e69.js",
+  "application.js.map": "/packs/js/application-9afcbb5693aa87623e69.js.map",
+  "bootstrap.js": "/packs/js/bootstrap-47b39c31ab50cdfab55a.js",
+  "bootstrap.js.map": "/packs/js/bootstrap-47b39c31ab50cdfab55a.js.map",
+  "downloader.js": "/packs/js/downloader-0033581cc57fa08cdd33.js",
+  "downloader.js.map": "/packs/js/downloader-0033581cc57fa08cdd33.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-9afcbb5693aa87623e69.js"
+      ],
+      "js.map": [
+        "/packs/js/application-9afcbb5693aa87623e69.js.map"
+      ]
+    },
+    "bootstrap": {
+      "js": [
+        "/packs/js/bootstrap-47b39c31ab50cdfab55a.js"
+      ],
+      "js.map": [
+        "/packs/js/bootstrap-47b39c31ab50cdfab55a.js.map"
+      ]
+    },
+    "downloader": {
+      "js": [
+        "/packs/js/downloader-0033581cc57fa08cdd33.js"
+      ],
+      "js.map": [
+        "/packs/js/downloader-0033581cc57fa08cdd33.js.map"
+      ]
+    },
+    "highlighter": {
+      "js": [
+        "/packs/js/highlighter-a45d87dc0a961955eeeb.js"
+      ],
+      "js.map": [
+        "/packs/js/highlighter-a45d87dc0a961955eeeb.js.map"
+      ]
+    },
+    "jquery": {
+      "js": [
+        "/packs/js/jquery-d16dc94fc68da7c49bfc.js"
+      ],
+      "js.map": [
+        "/packs/js/jquery-d16dc94fc68da7c49bfc.js.map"
+      ]
+    }
+  },
+  "highlighter.js": "/packs/js/highlighter-a45d87dc0a961955eeeb.js",
+  "highlighter.js.map": "/packs/js/highlighter-a45d87dc0a961955eeeb.js.map",
+  "jquery.js": "/packs/js/jquery-d16dc94fc68da7c49bfc.js",
+  "jquery.js.map": "/packs/js/jquery-d16dc94fc68da7c49bfc.js.map"
+}
